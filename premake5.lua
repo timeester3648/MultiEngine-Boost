@@ -7,6 +7,7 @@ project "Boost"
 	cdialect "C17"
 	targetname "%{prj.name}"
 	inlining "Auto"
+	tags { "require_boost_includes" }
 
 	files {
 		-- not needed for including
@@ -25,7 +26,6 @@ project "Boost"
 
 	includedirs {
 		"%{IncludeDir.icu}",
-		"%{IncludeDir.boost}",
 
 		"./libs/locale/src"
 	}

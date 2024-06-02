@@ -10,12 +10,13 @@ project "Boost"
 	tags { "require_boost_includes" }
 
 	files {
-		-- not needed for including
+		-- Note: not needed for including
 		-- "./libs/*/include/boost/**.hpp",
 
 		"./libs/json/src/**.cpp",
 		"./libs/locale/src/**.cpp",
-		"./libs/filesystem/src/**.cpp"
+		"./libs/filesystem/src/**.cpp",
+		"./libs/program_options/src/**.cpp"
 	}
 
 	excludes {

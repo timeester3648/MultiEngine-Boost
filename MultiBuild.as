@@ -2,7 +2,7 @@ void main(MultiBuild::Workspace& workspace) {
 	auto project = workspace.create_project(".");
 	auto properties = project.properties();
 
-	properties.name("Boost");
+	project.name("Boost");
 	properties.binary_object_kind(MultiBuild::BinaryObjectKind::eStaticLib);
 	properties.project_includes("icu");
 	project.license("./LICENSE_1_0.txt");

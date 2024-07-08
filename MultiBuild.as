@@ -13,13 +13,10 @@ void main(MultiBuild::Workspace& workspace) {
 		"./libs/numeric/**/include"
 	});
 
-	properties.defines({
-		"BOOST_LOCALE_WITH_ICU"
-	});
+	properties.defines("BOOST_LOCALE_WITH_ICU");
 
 	properties.files({
-		// Note: not needed for including
-		// "./libs/*/include/boost/**.hpp",
+		"./libs/*/include/boost/**.hpp",
 
 		"./libs/json/src/**.cpp",
 		"./libs/locale/src/**.cpp",

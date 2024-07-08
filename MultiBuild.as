@@ -32,7 +32,7 @@ void main(MultiBuild::Workspace& workspace) {
 	});
 
 	{
-		MultiBuild::ScopedFilter _(workspace, "config.platform:Windows");
+		MultiBuild::ScopedFilter _(project, "config.platform:Windows");
 		properties.excluded_files({
 			"./libs/locale/src/boost/locale/posix/**.cpp"
 		});
@@ -43,7 +43,7 @@ void main(MultiBuild::Workspace& workspace) {
 	}
 
 	{
-		MultiBuild::ScopedFilter _(workspace, "!config.platform:Windows");
+		MultiBuild::ScopedFilter _(project, "!config.platform:Windows");
 		properties.excluded_files({
 			"./libs/locale/src/boost/locale/win32/**.cpp"
 		});

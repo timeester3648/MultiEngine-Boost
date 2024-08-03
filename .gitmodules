@@ -820,11 +820,11 @@
 	branch = .
 [submodule "charconv"]
 	path = libs/charconv
-	url = ../charconv.git
+	url = https://github.com/boostorg/charconv.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "scope"]
 	path = libs/scope
-	url = ../scope.git
+	url = https://github.com/boostorg/scope.git
 	fetchRecurseSubmodules = on-demand
 	branch = .

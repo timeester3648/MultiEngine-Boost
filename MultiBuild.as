@@ -20,8 +20,9 @@ void main(MultiBuild::Workspace& workspace) {
 
 		"./libs/json/src/**.cpp",
 		"./libs/locale/src/**.cpp",
+		"./libs/charconv/src/**.cpp",
 		"./libs/filesystem/src/**.cpp",
-		"./libs/program_options/src/**.cpp"
+		"./libs/program_options/src/**.cpp",
 	});
 
 	properties.include_directories({

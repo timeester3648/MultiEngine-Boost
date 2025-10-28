@@ -4,7 +4,6 @@ void main(MultiBuild::Workspace& workspace) {
 
 	project.name("Boost");
 	properties.binary_object_kind(MultiBuild::BinaryObjectKind::eStaticLib);
-	properties.project_includes("icu");
 	project.license("./LICENSE_1_0.txt");
 
 	project.include_own_required_includes(true);
@@ -12,8 +11,6 @@ void main(MultiBuild::Workspace& workspace) {
 		"./libs/*/include",
 		"./libs/numeric/**/include"
 	});
-
-	properties.defines("BOOST_LOCALE_WITH_ICU");
 
 	properties.files({
 		"./libs/*/include/boost/**.hpp",
@@ -27,6 +24,10 @@ void main(MultiBuild::Workspace& workspace) {
 
 	properties.include_directories({
 		"./libs/locale/src"
+	});
+
+	properties.excluded_files({
+		"./libs/locale/src/boost/locale/icu/**.cpp"
 	});
 
 	{

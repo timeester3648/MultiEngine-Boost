@@ -353,11 +353,6 @@
 	url = https://github.com/boostorg/type_traits.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
-[submodule "compatibility"]
-	path = libs/compatibility
-	url = https://github.com/boostorg/compatibility.git
-	fetchRecurseSubmodules = on-demand
-	branch = .
 [submodule "bind"]
 	path = libs/bind
 	url = https://github.com/boostorg/bind.git
@@ -831,5 +826,30 @@
 [submodule "boostlook"]
 	path = tools/boostlook
 	url = https://github.com/boostorg/boostlook.git
+	fetchRecurseSubmodules = on-demand
+	branch = .
+[submodule "parser"]
+	path = libs/parser
+	url = https://github.com/boostorg/parser.git
+	fetchRecurseSubmodules = on-demand
+	branch = .
+[submodule "mqtt5"]
+	path = libs/mqtt5
+	url = https://github.com/boostorg/mqtt5.git
+	fetchRecurseSubmodules = on-demand
+	branch = .
+[submodule "hash2"]
+	path = libs/hash2
+	url = https://github.com/boostorg/hash2.git
+	fetchRecurseSubmodules = on-demand
+	branch = .
+[submodule "bloom"]
+	path = libs/bloom
+	url = https://github.com/boostorg/bloom.git
+	fetchRecurseSubmodules = on-demand
+	branch = .
+[submodule "openmethod"]
+	path = libs/openmethod
+	url = https://github.com/boostorg/openmethod.git
 	fetchRecurseSubmodules = on-demand
 	branch = .

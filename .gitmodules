@@ -853,3 +853,8 @@
 	url = https://github.com/boostorg/openmethod.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
+[submodule "decimal"]
+	path = libs/decimal
+	url = https://github.com/boostorg/decimal.git
+	fetchRecurseSubmodules = on-demand
+	branch = .
